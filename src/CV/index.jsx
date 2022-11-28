@@ -34,7 +34,7 @@ export default class CV extends Component {
             <div>
                 <HeadCV />
                 {this.props.data.map((item, index) => {
-                    return <SectionsCV index={Math.random(index)} item={item} number={this.state.number} />
+                    return <SectionsCV index={Math.random(index)} item={item}  />
                 })}
             </div>
         )

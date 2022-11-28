@@ -1,6 +1,7 @@
 
 import './App.css';
 import CV from './CV'
+import ClickToCountNumber from './ClickToCountNumber/ClickToCountNumber'
 
 const husuCvData = [
   {
@@ -21,6 +22,7 @@ const husuCvData = [
 function App() {
   return (
     <div className="App">
+      <ClickToCountNumber/>
       <CV data={husuCvData} />
     </div>
   );
