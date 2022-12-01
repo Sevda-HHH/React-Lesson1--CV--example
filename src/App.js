@@ -1,8 +1,9 @@
 
 import './App.css';
-import CV from './CV'
-import ClickToCountNumber from './ClickToCountNumber/ClickToCountNumber'
-
+import React from 'react';
+import CV from './CV' 
+import UserForm from './UserForm'
+import Cards from './CardSection'
 const husuCvData = [
   {
     title: "Hobby",
@@ -15,15 +16,16 @@ const husuCvData = [
   {
     title: "Education",
     list: ["AZII ", "Lisey  ", "Alqoritmika- Code for future"]
-  }
-
-]
+  } 
+] 
 
 function App() {
   return (
-    <div className="App">
-      <ClickToCountNumber/>
-      <CV data={husuCvData} />
+    <div className="App"> 
+      {/* <CV data={husuCvData} /> */}
+      {/* <UserForm/> */}
+
+      <Cards/>
     </div>
   );
 }
